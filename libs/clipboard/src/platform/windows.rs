@@ -944,18 +944,18 @@ pub fn create_cliprdr_context(
     enable_others: bool,
     response_wait_timeout_secs: u32,
 ) -> ResultType<Box<CliprdrClientContext>> {
-    Ok(CliprdrClientContext::create(
-        enable_files,
-        enable_others,
-        response_wait_timeout_secs,
-        Some(notify_callback),
-        Some(client_format_list),
-        Some(client_format_list_response),
-        Some(client_format_data_request),
-        Some(client_format_data_response),
-        Some(client_file_contents_request),
-        Some(client_file_contents_response),
-    )?)
+    //Ok(CliprdrClientContext::create(
+    //    enable_files,
+    //    enable_others,
+    //    response_wait_timeout_secs,
+    //    Some(notify_callback),
+    //    Some(client_format_list),
+    //    Some(client_format_list_response),
+    //    Some(client_format_data_request),
+    //    Some(client_format_data_response),
+    //    Some(client_file_contents_request),
+    //    Some(client_file_contents_response),
+    //)?)
 }
 
 extern "C" fn notify_callback(conn_id: UINT32, msg: *const NOTIFICATION_MESSAGE) -> UINT {
