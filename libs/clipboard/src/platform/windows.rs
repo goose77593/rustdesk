@@ -956,6 +956,7 @@ pub fn create_cliprdr_context(
     //    Some(client_file_contents_request),
     //    Some(client_file_contents_response),
     //)?)
+    return;
 }
 
 extern "C" fn notify_callback(conn_id: UINT32, msg: *const NOTIFICATION_MESSAGE) -> UINT {
