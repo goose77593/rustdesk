@@ -92,15 +92,14 @@ pub trait FileManager: Interface {
         include_hidden: bool,
         is_remote: bool,
     ) {
-        //self.send(Data::SendFiles((
-        //    id,
-        //    path,
-        //    to,
-        //    file_num,
-        //    include_hidden,
-        //    is_remote,
-        //)));
-        return;
+        self.send(Data::SendFiles((
+            id,
+            path,
+            to,
+            file_num,
+            include_hidden,
+            is_remote,
+        )));
     }
 
     fn add_job(
